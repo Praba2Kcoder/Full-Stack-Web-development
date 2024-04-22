@@ -1,6 +1,7 @@
 a:link, a:visited{
-    background-color:#ff3434;
+    background-color:#f04334;
     color:white;
+    text-decoration: none;
     padding:15px 20px;
     text-align:center;
     border:2px solid black;
