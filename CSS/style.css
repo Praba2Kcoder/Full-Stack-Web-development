@@ -1,13 +1,29 @@
-div{
-    background-color:red;
+/*universal Selector*/
+*{
+    background-color: powderblue;
+} 
+
+/*element selector*/
+body{
+    background-color: white;
+    border-color:white;
+}
+h2{
+    border:2px solid green;
+}
+
+/*Id selector*/
+#block{
+    border:2px solid black;
+    height:200px;
     width:300px;
-    height: 100px;
-    margin:auto;
-    border:2px solid yellow;
 }
-h1{
-    color:white;
+
+/*Class Selector*/
+.one{
+    color:red;
 }
-p{
+.two{
     color:blue;
 }
+
