@@ -1,15 +1,33 @@
 <style>
-    li{
-        display:inline;
+    nav{
         background-color: black;
         color: white;
-        padding: 10px;
-        margin-right: 40px;
+        padding: 20px;
     }
+    nav:hover{
+        background-color: blue;
+    }
+    li,h1,ul{
+        display: inline;
+    }
+    ul{
+        margin-left: 60%;
+    }
+    li a{
+        color:white;
+        text-decoration: none;
+        margin: 5px;
+    }
+    li a:hover{
+        color:rgb(0, 0, 0);
+    }
+    
 </style>
-
-<ul>
-    <li>Home</li>
-    <li>About Us</li>
-    <li>Contact Us</li>
-</ul>
+<nav>
+    <h1>Navbar</h1>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
