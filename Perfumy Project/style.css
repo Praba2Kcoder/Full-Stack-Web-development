@@ -32,6 +32,7 @@ input{
 .perfume_pic{
     width: 220px;
     height: 220px;
+    cursor:pointer;
 }
 .box{
     border: 2px solid black;
