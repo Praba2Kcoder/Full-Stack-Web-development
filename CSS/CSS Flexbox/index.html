@@ -6,34 +6,40 @@
     <title>Document</title>
 
     <style>
-       div{
+       .one{
         background-color: greenyellow;
         display:flex;
+        flex-direction:row;
+        height: 300px;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: end;
+        
+       }
+       .two{
+        background-color: greenyellow;
+        display:flex;
+        flex-direction:column;
+        height: 300px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: end;
        }
 
-       div h1{
+       h1{
         color: white;
-        text-align: center;
-        padding: 5px;
-        margin: 5px;
         background-color: black;
-        flex-basis: 20%;
-        flex-grow: 1;
+        height: fit-content;
+        width: fit-content;
        }
     </style>
 </head>
 <body>
-    <div>
+    <div class="one">
         <h1>One</h1>
+    </div> <br>
+    <div class="two">
         <h1>Two</h1>
-        <h1>Three</h1>
-        <h1>Four</h1>
-        <h1>Five</h1>
-        <h1>Six</h1>
-        <h1>Seven</h1>
-        <h1>Eight</h1>
     </div>
-    
 </body>
 </html>
