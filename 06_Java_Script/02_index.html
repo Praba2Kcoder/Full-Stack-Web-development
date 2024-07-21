@@ -1,14 +1,27 @@
-<h1 id="title">
-    Hello World!
-</h1>
-<button onclick="change()">Click</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adder</title>
+</head>
+<body>
+    <form>
+        <input id="num1" type="number" name="num1" placeholder="Enter n1">
+        <input id="num2" type="number" name="num2" placeholder="Enter n2">
+    </form>
+    <p id="result"></p>
+    <button onclick="add()">Add</button>
+</body>
 
 <script>
-    var title=document.getElementById("title")
-    console.log(title.textContent)
-
-    function change(){
-        title.textContent="Bye World!"
+    function add() {
+        var n1=Number(document.getElementById("num1").value);
+        var n2=Number(document.getElementById("num2").value);
+        var result=document.getElementById("result");
+        var sum=n1+n2;
+        result.textContent=sum;
     }
     
 </script>
+</html>
