@@ -1,3 +1,3 @@
-a=10;
-b=20;
-console.log(a+b)
+for(count=0;count<5;count++) {
+    console.log("John");
+}
