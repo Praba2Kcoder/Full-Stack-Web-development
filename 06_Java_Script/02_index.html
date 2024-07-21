@@ -1,9 +1,14 @@
 <h1 id="title">
     Hello World!
 </h1>
+<button onclick="change()">Click</button>
 
 <script>
     var title=document.getElementById("title")
     console.log(title.textContent)
-    title.textContent="Bye World!"
+
+    function change(){
+        title.textContent="Bye World!"
+    }
+    
 </script>
