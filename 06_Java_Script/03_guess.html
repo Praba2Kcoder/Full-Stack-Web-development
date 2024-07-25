@@ -1,0 +1,27 @@
+<h1>Guess the number</h1>
+<input id="guessNo"type="number" placeholder="Guess it!">
+<button onclick="check()">Check</button>
+<p id="result">You are Right/Wrong</p>
+<p id="chance"></p>
+
+<script>
+    var chan=10;
+    function check(){
+        var guessNo=document.getElementById("guessNo")
+        var res=document.getElementById("result")
+        var ch=document.getElementById("chance")
+
+        var n=Math.floor(Math.random()*10)+1;
+        var num=Number(guessNo.value);
+        
+        if(n==num) {
+            res.textContent="You got it!";
+            ch.textContent="";
+        }
+        else {
+            res.textContent="Sorry, You guessed wrong. The value is "+String(n);
+            chan-=1;
+            ch.textContent="You have remaining "+String(chan)+" chances only!";
+        }
+    }
+</script>
