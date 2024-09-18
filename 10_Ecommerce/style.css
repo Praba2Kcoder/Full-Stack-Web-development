@@ -1,0 +1,261 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+    vertical-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+    padding: 10px;
+}
+.navbar-links a{
+    text-decoration: none;
+    color: #1D232C;
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: #1D232C;
+    cursor: pointer;
+}
+.navbar-toggle-menu{
+    padding: 10px;
+    display: none;
+}
+.side-navbar{
+    background-color: #1D232C;
+    width: 40%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -50%;
+    transition: 1s;
+    color: white;
+    padding: 10px;
+}
+.side-navbar-link{
+    margin-bottom: 20px;
+}
+
+.side-navbar-links a{
+    color: white;
+    text-decoration: none;
+}
+
+.side-navbar-links a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+.header-image img{
+    width: 300px;
+    height: 300px;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.header button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color:#1D232C;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.services{
+    padding: 20px;
+}
+.services-container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-container-2{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.services-container-2 div{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #F2F4F7;
+}
+.new-arrival{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.new-arrival-container img{
+    display: block;
+    margin-top: 10px;
+}
+.new-arrival-container{
+    position: relative;
+    flex-basis: 20%;
+}
+.new-arrival-container button{
+    padding: 5px 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    top: 80%;
+    left: 15%;
+
+}
+
+.news-letter{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 10px;
+    text-align: center;
+}
+
+.news-letter input{
+    padding: 11px;
+    width: 80vw;
+    border: 2px solid black;
+}
+
+.news-letter button{
+    margin-top: 10px;
+    color: #F2F4F7;
+    background-color: #1D232C;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.footer{
+    margin-top: 20px;
+    padding: 40px;
+    background-color: #1D232C;
+    color: #F2F4F7;
+}
+
+@media screen and (max-width:600px){
+    .navbar-links{
+        display: none;
+    }
+    .navbar-toggle-menu{
+        display: inline-block;
+    }
+    .header{
+        text-align: center;
+    }
+    .header-image{
+        display: none;
+    }
+    .services-container-1{
+        display: none;
+    }
+    .services-container-2{
+        flex-direction: column;
+    }
+
+}
+
+/* Collections Section */
+.product-section{
+    margin-top: 20px;
+}
+.product-search{
+    width: 80%;
+    border:solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+.product-search input:focus{
+    outline: none;
+}
+.products{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.products-box{
+    text-align: center;
+    flex-basis: 20%;
+}
+.products-box img{
+    border-radius: 10px;
+}
+.collections-footer{
+    color: #F2F4F7;
+    background-color: #1D232C;
+    padding: 20px;
+}
+
+/* Contact page */
+
+.contact-container{
+    width: 60%;
+    height: 500px;
+    color:#F2F4F7;
+    background-color: #1D232C;
+    margin:auto;
+    padding: 30px;
+    border: none;
+    border-radius: 20px;
+    align-items: center;
+}
+.name-input, .email-input,.message-input{
+    width: 80%;
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+}
+.message-input{
+    height: 150px;
+}
+.name-input:focus, .email-input:focus,.message-input:focus{
+    outline: none;
+}
+/* {
+    width: 80%;
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+} */
+/* {
+    width: 80%;
+    height: 150px;
+    border-radius: 10px;
+    border: none;
+} */
